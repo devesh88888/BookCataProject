@@ -1,6 +1,7 @@
+.vercel
 
 backend/.env
 book-catalog-frontend/.env
 
 
-.vercel
+book-catalog-frontend/.env.local
