@@ -20,7 +20,7 @@ export default function NavBar({ onSearch, showSearch }) {
     // Remove the token from localStorage
     localStorage.removeItem('token');
     // Redirect to the login page
-    router.push('/auth/login');
+    router.push('/');
   };
 
   return (

@@ -22,7 +22,7 @@ export default function AddBookPage() {
     e.preventDefault();
     try {
       await axios.post(
-        'http://localhost:5000/api/books',
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/books`,
         { title, author },
         {
           headers: {
