@@ -12,7 +12,7 @@ export default function SignupPage() {
     e.preventDefault();
     try {
       // Correct API endpoint for signup
-      await axios.post('http://localhost:5000/api/auth/signup', { email, password });
+      await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/auth/signup`, { email, password });
       // Redirect to login page on successful signup
       router.push('/auth/login');
     } catch (error) {
