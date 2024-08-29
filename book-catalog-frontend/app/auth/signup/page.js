@@ -21,6 +21,9 @@ export default function SignupPage() {
     }
   };
 
+  const handleLoginRedirect = () => {
+    router.push('/auth/login');
+  };
   return (
     <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
       <h1 className="text-2xl font-bold mb-6">Sign Up</h1>
@@ -52,6 +55,15 @@ export default function SignupPage() {
           Sign Up
         </button>
       </form>
+      <div className="mt-4">
+        <p className="text-gray-700">Already have an account?</p>
+        <button
+          onClick={handleLoginRedirect}
+          className="mt-2 bg-gray-500 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-600"
+        >
+          Login
+        </button>
+      </div>
     </div>
   );
 }
